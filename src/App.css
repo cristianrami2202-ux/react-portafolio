@@ -1,0 +1,214 @@
+/* Color morado principal del diseño y sobreescritura de Bootstrap */
+:root {
+  --morado: #6a00b3;
+  --bs-primary: #6a00b3;
+  --bs-primary-rgb: 106, 0, 179;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  color: #111;
+}
+
+/* ---------- Navbar ---------- */
+.barra-morada {
+  background-color: var(--morado);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.marca-nombre {
+  font-size: 1.1rem;
+}
+
+.marca-contacto {
+  font-size: 0.65rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.barra-morada .nav-link {
+  color: #fff;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.barra-morada .nav-link:hover,
+.barra-morada .nav-link:focus {
+  color: #e6ccff;
+}
+
+/* ---------- Secciones ---------- */
+.contenido {
+  max-width: 960px;
+}
+
+.seccion {
+  padding-top: 2.5rem;
+  scroll-margin-top: 1rem;
+}
+
+.titulo-morado {
+  color: var(--morado);
+  font-weight: 700;
+}
+
+h1.titulo-morado {
+  font-size: 2.6rem;
+}
+
+.texto-gris {
+  color: #666;
+  font-size: 1.05rem;
+}
+
+.avatar {
+  max-height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* ---------- Habilidades ---------- */
+.tarjeta-habilidad {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icono-habilidad {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.nombre-habilidad {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.descripcion-habilidad {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* ---------- Proyectos ---------- */
+.proyecto-titulo {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.proyecto-lista {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-linea {
+  width: 75%;
+  margin: 1rem auto;
+  color: #bbb;
+}
+
+/* ---------- Recomendaciones ---------- */
+.tarjeta-recomendacion {
+  font-size: 0.95rem;
+  border: 1px solid #d9c2ee;
+  border-left: 4px solid var(--morado);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-recomendacion .card-body {
+  padding: 1.25rem;
+}
+
+.autor-recomendacion {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--morado);
+  margin-top: 0.75rem;
+}
+
+/* ---------- Formulario ---------- */
+#contacto {
+  margin-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+#contacto form {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-form {
+  color: var(--morado);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+#contacto .form-control:focus {
+  border-color: var(--morado);
+  box-shadow: 0 0 0 0.2rem rgba(106, 0, 179, 0.2);
+}
+
+.boton-enviar {
+  min-width: 180px;
+  background-color: var(--morado);
+  border-color: var(--morado);
+  color: #fff;
+  font-weight: 700;
+}
+
+.boton-enviar:hover,
+.boton-enviar:focus {
+  background-color: #4f0086;
+  border-color: #4f0086;
+  color: #fff;
+}
+
+/* ---------- Botón subir ---------- */
+footer {
+  height: 5rem;
+}
+
+.boton-subir {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  background-color: var(--morado);
+  border-color: var(--morado);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.boton-subir:hover,
+.boton-subir:focus {
+  background-color: #4f0086;
+  border-color: #4f0086;
+}
+
+/* ---------- Celulares ---------- */
+@media (max-width: 767px) {
+  h1.titulo-morado {
+    font-size: 2rem;
+  }
+  .proyecto-linea {
+    width: 100%;
+  }
+}
